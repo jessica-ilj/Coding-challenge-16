@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ProductItem({ name, price, description }) { //function to display the price.
+function ProductItem({ name, price, description }) { //function to display the price, name and description.
   return (
     <div>
       <h3>{name}</h3>
