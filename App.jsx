@@ -25,21 +25,4 @@ function App() {
     },
   ]);
 
-  // Function to add a new product to the list
-  const addProduct = (newProduct) => {
-    setProducts((prevProducts) => {
-      const newId = prevProducts.length > 0 ? prevProducts[prevProducts.length - 1].id + 1 : 1;
-      return [...prevProducts, { id: newId, ...newProduct }];
-    });
-  };
-
-  return (
-    <div>
-      <h1>Product Dashboard</h1>
-      <ProductList products={products} />
-      <AddProductForm addProduct={addProduct} />
-    </div>
-  );
-}
-
-export default App;
+  
